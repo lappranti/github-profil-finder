@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url(assets/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro Medium";
+    src: url(assets/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf) format("opentype");
+}
+
+html,
+body {
+    height: 100%;
+}
+
+*,
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+    line-height: normal;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.text-on-1-line,
+.text-on-2-line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text-on-1-line {
+    -webkit-line-clamp: 1;
+}
+
+.text-on-2-line {
+    -webkit-line-clamp: 2;
+}
