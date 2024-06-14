@@ -38,7 +38,7 @@ export class AppComponent {
     this.fetchRepos(this.username).then((data) => {
       if (data) {
         this.repos = data;
-        // this.displRepos = data.slice(0, 6);
+        this.displRepos = data.slice(0, 6);
       }
     });
   }
